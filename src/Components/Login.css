@@ -1,0 +1,48 @@
+
+.login-card {
+  margin-top: 20%;
+  background-color: #a78fc1;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for a card effect */
+}
+
+.login-title {
+  color: #5e10b1;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.login-label {
+  color: #5e10b1;
+  font-weight: bold;
+}
+
+.login-input {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.login-button {
+  background-color: #5e10b1;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #388E3C;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
