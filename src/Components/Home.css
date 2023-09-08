@@ -1,0 +1,24 @@
+.home-container {
+    background-color: #6b0a83;
+    background-image: url('bg.jpg'); /* Replace with the actual path to your image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center center;
+    color: #48108c;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-content {
+    text-align: center;
+  }
+  
+  .btn-group {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    margin: 10px;
+  }
