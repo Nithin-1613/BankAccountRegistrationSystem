@@ -1,0 +1,22 @@
+.container{
+    background-image: url(https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background.jpg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+.formrow{
+    height:100%;
+    overflow-y: auto;
+}
+#formcontent{
+    background-color: aliceblue;
+}
+.login-label {
+    color: #5e10b1;
+    font-weight: bold;
+  }
+  
+
+  .login-title{
+    color:black;
+  }

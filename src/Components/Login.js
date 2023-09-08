@@ -1,6 +1,7 @@
 // Login.js
 import React, { useState, useEffect } from 'react';
 import './Login.css';
+import { SHA256 } from 'crypto-js';
 function Login() {
   const [users, setUsers] = useState([]);
   const [email, setEmail] = useState('');
@@ -8,7 +9,7 @@ function Login() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/users')
+    fetch('http://localhost:3000/bank')
       .then(response => {
         if (response.status !== 200) {
           throw new Error('Network response was not ok');
@@ -24,6 +25,12 @@ function Login() {
       });
   }, []);
 
+
+  const hashEnteredPassword = (password, salt) => {
+    const hashedPassword = SHA256(password + salt).toString();
+    return hashedPassword;
+  };
+
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -37,12 +44,13 @@ function Login() {
 
     // Check if the provided email and password match any user in the fetched data
     if (users && users.length > 0) {
-      const foundUser = users.find(user => user.email === email && user.password === password);
+      
+      const foundUser = users.find(user => user.emailid === email && user.password === hashEnteredPassword(password, user.salt));
 
       if (foundUser) {
         console.log('Login successful');
         // After successful login, redirect to the dashboard page
-        window.location.href = '/dashboard';
+        window.location.href = `/dashboard/${email}`;
         setError('');
       } else {
         // Authentication failed, show an error message to the user.
@@ -92,7 +100,7 @@ function Login() {
               <button type="submit" className="btn btn-primary btn-block login-button">Log In</button>
             </form>
             <p class="text-center mt-3">
-              Don't have an account? <a href="/registration" class="registration-link">Register here</a>
+              Don't have an account? <a href="/register" class="registration-link">Register here</a>
             </p>
           </div>
         </div>

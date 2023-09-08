@@ -1,9 +1,32 @@
 {
-  "users": [
+  "bank": [
     {
-      "id": 1,
-      "email": "user@gmail.com",
-      "password": "pass"
+      "firstname": "Nithinrhaj",
+      "lastname": "S",
+      "password": "880abe86a0badfc53b45d7cb6c0d269ddadf9f6f1929f3aa9b50b25fb18f0a7f",
+      "mobilenumber": "6369033945",
+      "emailid": "nithinrhaj@gmail.com",
+      "Aadharcardnumber": "429340536612",
+      "dateofbirth": "2001-01-11",
+      "AccountNumber": "584927594441",
+      "Accountbalance": 0,
+      "Accounttype": "Joint Account",
+      "salt": "51edeeed13de391ce02573ce4bb22494",
+      "id": 1
+    },
+    {
+      "firstname": "new",
+      "lastname": "s",
+      "password": "aa08a531137b4898e812bad107ece84ac5e0c1d72257fbe21f6a3aff9dc11659",
+      "mobilenumber": "6369033945",
+      "emailid": "nithin@mail.com",
+      "Aadharcardnumber": "429340571112",
+      "dateofbirth": "2001-02-11",
+      "AccountNumber": "293249644132",
+      "Accountbalance": 0,
+      "Accounttype": "Business Account",
+      "salt": "2d2aa4192158c90b7ae54bf11b7a259",
+      "id": 2
     }
   ]
 }

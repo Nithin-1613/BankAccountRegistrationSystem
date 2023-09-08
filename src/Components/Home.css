@@ -13,8 +13,13 @@
   
   .home-content {
     text-align: center;
+
   }
   
+  .home-content img{
+    height:20vh;
+    width:10vw;
+  }
   .btn-group {
     margin-top: 20px;
   }

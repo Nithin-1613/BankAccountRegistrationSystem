@@ -1,6 +1,7 @@
 
 import { BrowserRouter,Routes } from 'react-router-dom';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Route } from 'react-router-dom';
 import UserRegistration from './Components/UserRegistration';
 import Home from './Components/Home';
@@ -22,7 +23,7 @@ function App() {
           <Route path="/" Component={Home} />
           <Route path="/Login" Component={Login} />
           <Route path="/Register" Component={UserRegistration} />
-          <Route path="/dashboard" Component={Dashboard} />
+          <Route path="/dashboard/:emailid" Component={Dashboard} />
         </Routes>
       </BrowserRouter>
     </div>
